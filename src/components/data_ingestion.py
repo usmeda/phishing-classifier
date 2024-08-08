@@ -30,7 +30,7 @@ class DataIngestion:
 
             logging.info(f"saving exported data into feature store file path: {raw_batch_files_path}")
 
-            for collection_name, dataset in incoming_Data.export_colecitons_as_dataframe():
+            for collection_name, dataset in incoming_Data.export_collections_as_dataframe():
                 logging.info(F"shape of {collection_name}: {dataset.shape}")
                 feature_store_file_path = os.path.join(raw_batch_files_path, collection_name + '.csv')
                 print(f"feature store file path: {feature_store_file_path}")

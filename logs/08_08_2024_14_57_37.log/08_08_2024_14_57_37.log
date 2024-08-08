@@ -1,0 +1,33 @@
+[ 2024-08-08 14:57:42,403 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2024-08-08 14:57:42,445 ] 187 werkzeug - INFO -  * Debugger PIN: 144-597-497
+[ 2024-08-08 15:02:13,218 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:13] "GET / HTTP/1.1" 200 -
+[ 2024-08-08 15:02:51,017 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:51] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+[ 2024-08-08 15:02:51,159 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:51] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2024-08-08 15:02:51,521 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:51] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2024-08-08 15:02:51,934 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:51] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2024-08-08 15:02:52,175 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:02:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:10:33,020 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:10:33] "GET /predict HTTP/1.1" 200 -
+[ 2024-08-08 15:10:33,122 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:10:33] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2024-08-08 15:10:33,231 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:10:33] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2024-08-08 15:10:35,463 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:10:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-08-08 15:12:45,550 ] 44 root - INFO - Entered initiate_data_ingestion method of Data_Integration class
+[ 2024-08-08 15:12:45,550 ] 25 root - INFO - Exporting data to mongo db
+[ 2024-08-08 15:12:45,551 ] 31 root - INFO - saving exported data into feature store file path: artifacts\08_08_2024_14_57_37\data_ingestion
+[ 2024-08-08 15:12:45,551 ] 40 root - ERROR - Error in exporting data into raw data directory: 'PhishingData' object has no attribute 'export_colecitons_as_dataframe'
+[ 2024-08-08 15:12:45,552 ] 54 root - ERROR - Error in initiate_data_ingestion method: Error occurred python scipt name [D:\Data_Science\FSDS_Pro\Projects\phishing-classifier\src\components\data_ingestion.py] line number [33] error message ['PhishingData' object has no attribute 'export_colecitons_as_dataframe']
+[ 2024-08-08 15:12:45,607 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:12:45] "[35m[1mGET /train HTTP/1.1[0m" 500 -
+[ 2024-08-08 15:12:45,712 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:12:45] "GET /train?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2024-08-08 15:12:45,804 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:12:45] "GET /train?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2024-08-08 15:12:46,268 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:12:46] "GET /train?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2024-08-08 15:12:46,481 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:12:46] "[36mGET /train?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:16:54,805 ] 44 root - INFO - Entered initiate_data_ingestion method of Data_Integration class
+[ 2024-08-08 15:16:54,805 ] 25 root - INFO - Exporting data to mongo db
+[ 2024-08-08 15:16:54,806 ] 31 root - INFO - saving exported data into feature store file path: artifacts\08_08_2024_14_57_37\data_ingestion
+[ 2024-08-08 15:16:54,806 ] 40 root - ERROR - Error in exporting data into raw data directory: 'PhishingData' object has no attribute 'export_colecitons_as_dataframe'
+[ 2024-08-08 15:16:54,807 ] 54 root - ERROR - Error in initiate_data_ingestion method: Error occurred python scipt name [D:\Data_Science\FSDS_Pro\Projects\phishing-classifier\src\components\data_ingestion.py] line number [33] error message ['PhishingData' object has no attribute 'export_colecitons_as_dataframe']
+[ 2024-08-08 15:16:54,867 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:16:54] "[35m[1mGET /train HTTP/1.1[0m" 500 -
+[ 2024-08-08 15:16:55,014 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:16:55] "[36mGET /train?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:16:55,067 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:16:55] "[36mGET /train?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:16:55,442 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:16:55] "[36mGET /train?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:16:55,902 ] 187 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2024 15:16:55] "[36mGET /train?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-08-08 15:17:14,157 ] 187 werkzeug - INFO -  * Detected change in 'D:\\Data_Science\\FSDS_Pro\\Projects\\phishing-classifier\\src\\components\\data_ingestion.py', reloading

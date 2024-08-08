@@ -1,13 +1,13 @@
 import os
-import sys
-
-import certifi
 import pymongo
-
+#from pymongo.errors import ConnectionError
+from src.exception import CustomException  
+import sys
+import certifi
 from src.constant import *
-from src.exception import CustomException
 
 ca = certifi.where()
+MONGO_DATABASE_NAME = os.getenv("MONGO_DATABASE_NAME")
 
 class MongoDBClient:
     client = None
@@ -18,9 +18,9 @@ class MongoDBClient:
                 mongo_db_url = os.getenv("MONGO_DB_URL")
                 if mongo_db_url is None:
                     raise Exception("Environment key: MONGO_DB_URL is not set.")
-                MongoDBClient.client = pymongo.MongoClient(nongo_db_url, tlsCAFile = ca)
+                MongoDBClient.client = pymongo.MongoClient(mongo_db_url, tlsCAFile = ca)
             self.client = MongoDBClient.client
             self.database = self.client[database_name]
-            self.databsae_name = database_name
+            self.database_name = database_name
         except Exception as e:
             raise CustomException(e, sys)

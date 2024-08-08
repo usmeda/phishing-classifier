@@ -1,8 +1,8 @@
 import sys
 from typing import Optional, List
-
+from src.logger import logging
 from database_connect import mongo_operation as mongo
-from pymongo
+from pymongo import MongoClient
 import numpy as np
 import pandas as pd
 from src.constant import *
