@@ -22,5 +22,7 @@ class MongoDBClient:
             self.client = MongoDBClient.client
             self.database = self.client[database_name]
             self.database_name = database_name
+            #self.database = self.client['phishing']
+            #self.database_name = 'phishing'
         except Exception as e:
             raise CustomException(e, sys)
